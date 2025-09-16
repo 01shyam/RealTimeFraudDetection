@@ -18,15 +18,15 @@ kafka_config = {
     'bootstrap.servers': 'pkc-619z3.us-east1.gcp.confluent.cloud:9092',
     'sasl.mechanisms': 'PLAIN',
     'security.protocol': 'SASL_SSL',
-    'sasl.username': 'JADTAZYAET5ARBWE',
-    'sasl.password': 'cfltAxiwyCD2pWXKVZQH9RiPExJ2UazW34OiRvnnhDdXmbapYIjAFIzv0jV7RjYw',
+    'sasl.username': 'JADTAZ5ARBWE',
+    'sasl.password': 'cfltAxiwyCD2pWXRiPExJ2UazW34OiRvnnhDdXmbapYIjAFIzv0jV7RjYw',
     'group.id': 'G1',
     'auto.offset.reset': 'earliest'
 }
 
 schema_registry_client = SchemaRegistryClient({
-    'url': 'https://psrc-4x67ewe.us-east1.gcp.confluent.cloud',
-    'basic.auth.user.info': '{}:{}'.format('THTFWIERVD3FE7YD', 'cflttZMC3bOS05j0Q1IXpj+h1URWiTxx2JfS4u9euIwVOupIrSwWRD4PLWrfKKIg')
+    'url': 'https://psrc-4x67.us-east1.gcp.confluent.cloud',
+    'basic.auth.user.info': '{}:{}'.format('THTFWVD3FE7YD', 'cflttZMC3bOS05j0Q1IXpj+h1U2JfS4u9euIwVOupIrSwWRD4PLWrfKKIg')
 })
 
 subject_name = 'Transaction_Table-value'
@@ -87,3 +87,4 @@ except KeyboardInterrupt:
     pass
 finally:
     consumer.close()
+
