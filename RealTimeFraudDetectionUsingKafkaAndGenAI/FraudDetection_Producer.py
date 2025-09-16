@@ -38,18 +38,18 @@ def delivery_report(err, msg):
 
 #define kafka config
 kafka_config={
-        'bootstrap.servers': 'pkc-619z3.us-east1.gcp.confluent.cloud:9092',
+        'bootstrap.servers': 'pkc-613.us-east1.gcp.confluent.cloud:9092',
         'sasl.mechanisms': 'PLAIN',
         'security.protocol': 'SASL_SSL',
-        'sasl.username': 'JADTAZYAET5ARBWE',
-        'sasl.password': 'cfltAxiwyCD2pWXKVZQH9RiPExJ2UazW34OiRvnnhDdXmbapYIjAFIzv0jV7RjYw',
+        'sasl.username': 'JADTAZARBWE',
+        'sasl.password': 'cfltAxiwyCD2pWXKVZQxJ2UazW34OiRvnnhDdXmbapYIjAFIzv0jV7RjYw',
 
  }
 
 # Creating Schema Registry Client
 schema_registry_client=SchemaRegistryClient({
-        'url': 'https://psrc-4x67ewe.us-east1.gcp.confluent.cloud',
-        'basic.auth.user.info' : '{}:{}'.format('THTFWIERVD3FE7YD','cflttZMC3bOS05j0Q1IXpj+h1URWiTxx2JfS4u9euIwVOupIrSwWRD4PLWrfKKIg')
+        'url': 'https://psrc-4x67.us-east1.gcp.confluent.cloud',
+        'basic.auth.user.info' : '{}:{}'.format('THTFWIERVDE7YD','cflttZMC3bOXpj+h1URWiTxx2JfS4u9euIwVOupIrSwWRD4PLWrfKKIg')
     })
 
 
@@ -98,6 +98,7 @@ for index,row in df.iterrows():
 
 
 print(f"All Data successfully published to Kafka and number of records: {count}")
+
 
 
 
